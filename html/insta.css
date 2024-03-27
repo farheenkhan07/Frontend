@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  height: 110vh;
+  padding: 40px 0px;
+}
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.png {
+  height: 600px;
+}
+.insta_png {
+  height: 90px;
+}
+.insta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px 30px;
+  border: 1px solid rgb(195, 195, 195);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.fb_logo {
+  height: 25px;
+}
+.box {
+  width: 301px;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #fafafa;
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 3px;
+}
+.btn {
+  padding: 7px 130px;
+  background-color: rgb(49, 151, 214);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.lines {
+  background-color: #9b9b9b;
+  height: 1px;
+  width: 123px;
+}
+.txt1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(57, 57, 57);
+  font-size: 14px;
+}
+.txt2 {
+  color: #385185;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.txt3 {
+  color: #385185;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(195, 195, 195);
+  padding: 20px 71px;
+}
+.sign {
+  text-decoration: none;
+  color: #4d96f6;
+  font-weight: bold;
+  font-size: 16px;
+}
+.txt4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.store {
+  height: 50px;
+}
+.txt5 {
+  font-size: 15px;
+  padding: 15px 0px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 50px;
+}
+a {
+  text-decoration: none;
+  color: rgb(147, 147, 147);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.list1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
