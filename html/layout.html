@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 100vh;
+        background-color: pink;
+      }
+      .box {
+        height: 100vh;
+        background-color: aquamarine;
+        // margin: 30px;
+
+        border: 2px pink;
+      }
+      #box1 {
+        height: 20%;
+      }
+      #box2 {
+        height: 60%;
+        display: flex;
+      }
+      #box3 {
+        height: 20%;
+      }
+      #in1 {
+        background-color: aqua;
+
+        width: 40%;
+        border: 8px solid pink;
+      }
+      #in2 {
+        background-color: rgb(219, 148, 172);
+        border: 8px solid pink;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      .inner-in {
+        margin: 10px;
+        background-color: gray;
+      }
+      #inn1 {
+        height: 30%;
+        width: 30%;
+      }
+      #inn2 {
+        height: 30%;
+        width: 30%;
+      }
+      #inn3 {
+        height: 30%;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2">
+        <div class="inner" id="in1"></div>
+        <div class="inner" id="in2">
+          <div class="inner-in" id="inn1"></div>
+          <div class="inner-in" id="inn2"></div>
+          <div class="inner-in" id="inn3"></div>
+        </div>
+      </div>
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>
