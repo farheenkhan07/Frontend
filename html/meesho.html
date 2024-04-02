@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .header {
+        height: 13vh;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid rgb(212, 209, 209);
+      }
+
+      .logo img {
+        height: 200px;
+        width: 100px;
+      }
+      .right ul {
+        display: flex;
+      }
+
+      .right ul li {
+        list-style: none;
+        margin: 10px;
+        font-size: 15px;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+      }
+      .inp {
+        height: 40px;
+        width: 400px;
+        margin: 25px 15px;
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        border: 1px solid black;
+        outline: none;
+      }
+      .right ul li:nth-child(1) {
+        border-right: 2px solid rgb(212, 209, 209);
+        padding: 10px;
+      }
+      .right ul li:nth-child(2) {
+        border-right: 2px solid rgb(212, 209, 209);
+        padding: 10px;
+      }
+      .right ul li:nth-child(3) {
+        padding: 10px;
+      }
+      .main {
+        height: 120vh;
+        background: linear-gradient(
+          rgb(253, 233, 242) 0%,
+          rgb(253, 240, 232) 100%,
+          rgb(253, 240, 232) 100%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 100vh;
+        width: 32%;
+        border: 2px solid rgb(212, 209, 209);
+        border-radius: 8px;
+        background-color: white;
+      }
+      .box-upper {
+        height: 30%;
+      }
+      .input {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+      }
+      .box-lower {
+        height: 50%;
+
+        padding: 20px 0px;
+      }
+
+      .box-upper img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px 8px 0px 0px;
+      }
+      .left-box img {
+        height: 15px;
+      }
+      .lower-content h3 {
+        font-size: 22px;
+        margin: 10px 0px;
+        display: flex;
+      }
+      .left-box {
+        border-bottom: 1px solid rgb(212, 209, 209);
+        height: 55px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+      }
+      .left-box p {
+        font-size: 15px;
+        margin: 5px 0px;
+        color: rgb(161, 160, 160);
+      }
+      .right-box {
+        border-bottom: 1px solid rgb(212, 209, 209);
+        height: 55px;
+        width: 80%;
+        display: flex;
+        align-items: end;
+        margin: 10px;
+      }
+      .right-box input {
+        width: 100%;
+        height: 50%;
+        padding: 10px;
+        border: none;
+        font-size: 16px;
+      }
+      .btn {
+        width: 80%;
+        height: 50px;
+        border: none;
+        color: white;
+        background-color: rgb(159, 32, 137);
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .lower-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .input label {
+        font-size: 20px;
+        color: black;
+      }
+      .footer {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+        align-items: end;
+      }
+      .footer span {
+        color: rgb(139, 139, 163);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: "Mier demi";
+      }
+      .footer span a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <div class="logo">
+          <img
+            src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg"
+            alt=""
+          />
+        </div>
+        <div class="input">
+          <input
+            type="text"
+            class="inp"
+            placeholder="Try Saree,Kurti or Search by product code"
+          />
+        </div>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <span><i class="fa-solid fa-mobile-screen"></i></span>
+            <span>Download App</span>
+          </li>
+          <li>Become a supplier</li>
+          <li>Newsroom</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="box">
+        <div class="box-upper">
+          <img
+            src="https://images.meesho.com/images/marketing/1661417516766.webp"
+            alt=""
+          />
+        </div>
+        <div class="box-lower">
+          <div class="lower-content">
+            <h3>Sign Up to view your profile</h3>
+            <div class="input">
+              <div class="left-box">
+                <p>Country</p>
+                <div>
+                  <span
+                    ><img
+                    src="data:image/png;base64,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"
+                  </span>
+                  <span>+91</span>
+                </div>
+              </div>
+              <div class="right-box">
+                <input type="text" placeholder="Phone Number" />
+              </div>
+            </div>
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+        <div class="footer">
+          <span>
+            By Continuing,you agree to Meesho's<br />
+            <a
+              href="https://www.meesho.com/legal/terms-conditions"
+              class="links"
+              >Terms&Conditions </a
+            >and&nbsp;
+            <a href="https://www.meesho.com/legal/privacy" class="links"
+              >Privacy Policy</a
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
