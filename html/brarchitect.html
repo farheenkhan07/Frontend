@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Verdana, sans-serif;
+      }
+      .header {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        color: #000;
+        background-color: #fff !important;
+        padding: 8px 16px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+          0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        letter-spacing: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .left {
+        display: flex;
+      }
+      .right {
+        display: flex;
+      }
+
+      .left a {
+        padding: 8px 16px;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: hidden;
+        width: auto;
+        display: block;
+      }
+      .right a {
+        padding: 8px 16px;
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        overflow: hidden;
+        display: block;
+      }
+      .container {
+        height: 100vh;
+        background: url("https://www.w3schools.com/w3images/architect.jpg");
+        background-size: cover;
+        background-position: center;
+        font-size: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .a {
+        color: #fff !important;
+        background-color: #000;
+        padding: 8px 16px;
+        opacity: 0.75;
+      }
+      .b {
+        color: #fff;
+        letter-spacing: 5px;
+        margin: 10px 10px;
+      }
+      p {
+        font-size: 25px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        border-bottom: 2px solid #eee;
+        height: 10%;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+      }
+      .projects {
+        min-height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 15px;
+      }
+      .item {
+        height: 200px;
+        width: 290px;
+        margin: 5px;
+      }
+      #item1 {
+        background: url(https://www.w3schools.com/w3images/house5.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item2 {
+        background: url(https://www.w3schools.com/w3images/house2.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item3 {
+        background: url(https://www.w3schools.com/w3images/house3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item4 {
+        background: url(https://www.w3schools.com/w3images/house4.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item5 {
+        background: url(https://www.w3schools.com/w3images/house2.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item6 {
+        background: url(https://www.w3schools.com/w3images/house5.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item7 {
+        background: url(https://www.w3schools.com/w3images/house4.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #item8 {
+        background: url(https://www.w3schools.com/w3images/house3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .item h4 {
+        font-family: sans-serif;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-top: 10px;
+        height: 40px;
+
+        text-align: center;
+        background-color: black;
+        color: #ffffff;
+        width: 47%;
+      }
+      .about {
+        text-align: justify;
+        padding-left: 16px;
+        padding-bottom: 20px;
+      }
+      .about span {
+        padding-top: 15px;
+      }
+      .content {
+        min-height: 70vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 15px;
+        margin-top: 20px;
+      }
+      .c {
+        height: 200px;
+        width: 290px;
+        margin: 5px;
+      }
+      #c1 {
+        background: url(https://www.w3schools.com/w3images/team2.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #c2 {
+        background: url(https://www.w3schools.com/w3images/team1.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #c3 {
+        background: url(https://www.w3schools.com/w3images/team3.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #c4 {
+        background: url(https://www.w3schools.com/w3images/team4.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      #c5 {
+        display: flex;
+        flex-direction: column;
+      }
+      #c6 {
+        display: flex;
+        flex-direction: column;
+      }
+      #c7 {
+        display: flex;
+        flex-direction: column;
+      }
+      #c8 {
+        display: flex;
+        flex-direction: column;
+      }
+      .content h3 {
+        padding-top: 15px;
+        font-size: 22px;
+        font-family: sans-serif;
+      }
+      .content h6 {
+        opacity: 0.4;
+        font-size: 15px;
+        padding-top: 15px;
+        font-family: sans-serif;
+      }
+      .content span {
+        padding-top: 15px;
+      }
+      .btn {
+        color: #000;
+        background-color: #f1f1f1;
+        font-size: 15px;
+        width: 100%;
+        border: none;
+        height: 40px;
+        padding: 8px 16px;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 17px;
+      }
+      button:hover {
+        background-color: rgb(209, 210, 210);
+        cursor: pointer;
+        color: black;
+      }
+
+      .form input {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 15px;
+        margin-left: 20px;
+        width: 99%;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 3px;
+      }
+      .form span {
+        padding: 15px;
+        margin-left: 6px;
+        font-size: 15px;
+
+        padding-bottom: 5px;
+      }
+      .btn2 {
+        padding: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: #000;
+        color: white;
+        font-size: 15px;
+        border: none;
+        width: 150px;
+      }
+      .photo {
+        min-width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: 20px;
+      }
+
+      .photo img {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer {
+        color: #fff;
+        background-color: #000;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        text-align: center;
+
+        height: 100px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <a href="#"><b>BR</b> Architects</a>
+      </div>
+      <div class="right">
+        <a href="#">Project</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <h4>
+        <span class="a"><b>BR</b></span>
+      </h4>
+      <span class="b">Architects</span>
+    </div>
+    <p>Projects</p>
+    <div class="projects">
+      <div class="item" id="item1">
+        <h4>Summer House</h4>
+      </div>
+      <div class="item" id="item2"><h4>Brick House</h4></div>
+      <div class="item" id="item3"><h4>Renovated</h4></div>
+      <div class="item" id="item4"><h4>Barn House</h4></div>
+      <div class="item" id="item5"><h4>Summer House</h4></div>
+      <div class="item" id="item6"><h4>Brick House</h4></div>
+      <div class="item" id="item7"><h4>Renovated</h4></div>
+      <div class="item" id="item8"><h4>Barn House</h4></div>
+    </div>
+    <p>About</p>
+    <div class="about">
+      <span>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
+        distinctio ullam nostrum, a beatae illum, praesentium voluptate atque
+        vel ducimus architecto facere veritatis ab vitae impedit quaerat ipsam
+        alias vero doloribus ut harum. Neque quasi error deserunt quod, eligendi
+        architecto sit delectus alias unde cum fugit odit. Laudantium, aperiam
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+        numquam iste dolorum eaque quos exercitationem ipsam adipisci asperiores
+        magni laborum atque provident molestiae a, illo inventore accusamus
+        quidem porro sed!
+      </span>
+    </div>
+    <div class="content">
+      <div class="c" id="c1"></div>
+      <div class="c" id="c2"></div>
+      <div class="c" id="c3"></div>
+      <div class="c" id="c4"></div>
+      <div class="c" id="c5">
+        <h3>John Deo</h3>
+        <h6>CEO & Founder</h6>
+        <span
+          >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+          sodales pellentesque elementum.</span
+        >
+        <button class="btn">Contact</button>
+      </div>
+      <div class="c" id="c6">
+        <h3>Jane Doe</h3>
+        <h6>Architect</h6>
+        <span
+          >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+          sodales pellentesque elementum.</span
+        >
+        <button class="btn">Contact</button>
+      </div>
+      <div class="c" id="c7">
+        <h3>Mike Ross</h3>
+        <h6>Architect</h6>
+        <span
+          >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+          sodales pellentesque elementum.</span
+        >
+        <button class="btn">Contact</button>
+      </div>
+      <div class="c" id="c8">
+        <h3>Dan Star</h3>
+        <h6>Architect</h6>
+        <span
+          >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+          sodales pellentesque elementum.</span
+        >
+        <button class="btn">Contact</button>
+      </div>
+    </div>
+    <p>Contact</p>
+    <div class="form">
+      <span>Lets get in touch and talk about your next project.</span>
+      <form action="" target="_blank">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Subject" />
+        <input type="text" placeholder="Comment" />
+        <button class="btn2">SEND MESSAGE</button>
+      </form>
+    </div>
+    <div class="photo">
+      <img src="	https://www.w3schools.com/w3images/map.jpg" />
+    </div>
+    <div class="footer">
+      <span
+        >Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></span
+      >
+    </div>
+  </body>
+</html>

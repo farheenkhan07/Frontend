@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: "poppins", sans-serif;
+    }
+    body {
+      display: flex;
+    }
+    .left-main {
+      width: 25%;
+      min-height: 100vh;
+    }
+    .right-main {
+      width: 75%;
+      min-height: 100vh;
+    }
+    .left {
+      width: 25%;
+      height: 100vh;
+      position: fixed;
+      background-color: #f44336;
+      color: white;
+    }
+    .left h3 {
+      font-size: 32px;
+      padding-top: 84px;
+      padding-bottom: 64px;
+      margin-left: 30px;
+    }
+    .list {
+    }
+    .list li {
+      list-style: none;
+      width: 100%;
+      display: block;
+      padding: 8px 16px;
+      text-align: left;
+      border: none;
+    }
+    .list li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      padding-left: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      font-weight: bold;
+      width: 100%;
+
+      display: block;
+    }
+    li a:hover {
+      color: #000;
+      background-color: #fff;
+      color: black;
+    }
+    .header {
+      width: 100%;
+      font-size: 34px;
+      padding-left: 50px;
+    }
+    .header h1 {
+      padding-top: 50px;
+    }
+    .header h2 {
+      color: #f44336;
+
+      width: 80px;
+      padding-bottom: 30px;
+
+      padding-top: 20px;
+    }
+    .border {
+      width: 60px;
+      border-bottom: 9px solid red;
+      border-radius: 4px;
+      padding-left: 50px;
+    }
+    .item-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      justify-content: 
+      align-items: center;
+      padding-top: 30px;
+      padding-left: 40px;
+    }
+    .item {
+      height: 230px;
+      width: 410px;
+      opacity: 0.8;
+      margin: 10px;
+      padding-left: 10px;
+    }
+    #i1,
+    #i2 {
+      height: 310px;
+      width: 410px;
+    }
+    #i1 {
+      background: url(https://www.w3schools.com/w3images/kitchenconcrete.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #i2 {
+      background: url(https://www.w3schools.com/w3images/atrium.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #i3 {
+      background: url(https://www.w3schools.com/w3images/livingroom.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #i4 {
+      background: url(https://www.w3schools.com/w3images/bedroom.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #i5 {
+      background: url(https://www.w3schools.com/w3images/diningroom.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #i6 {
+      background: url(https://www.w3schools.com/w3images/livingroom2.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .item:hover {
+      opacity: 10;
+      cursor: pointer;
+    }
+    .services {
+      padding-left: 50px;
+      padding-top: 40px;
+      margin-top: 30px;
+    }
+    .services h2 {
+      color: #f44336;
+      font-size: 50px;
+      width: 80px;
+      padding-bottom: 30px;
+
+      padding-top: 20px;
+    }
+    p {
+      font-size: 17px;
+      text-align: justify;
+      white-space: 1px;
+      line-height: 1.5;
+      padding-top: 10px;
+      margin-top: 10px;
+      padding-left: 5px;
+    }
+    .designer {
+      padding-left: 50px;
+      padding-top: 40px;
+      margin-top: 30px;
+    }
+    .designer h2 {
+      color: #f44336;
+      font-size: 50px;
+      width: 80px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+    .package {
+      padding-left: 50px;
+      padding-top: 40px;
+      margin-top: 30px;
+    }
+    .package h2 {
+      color: #f44336;
+      font-size: 50px;
+      width: 80px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+    .content {
+      min-height: 70vh;
+      align-items: center;
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+    }
+    .c {
+      height: 230px;
+      width: 280px;
+    }
+    #c1 {
+      background: url(https://www.w3schools.com/w3images/team2.jpg);
+      background-size: cover;
+      background-position: center;
+     
+    }
+
+    #c2 {
+      background: url(https://www.w3schools.com/w3images/team1.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    #c3 {
+      background: url(https://www.w3schools.com/w3images/team3.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #c5 {
+      display: flex;
+      flex-direction: column;
+      background-color: #f1f1f1;
+      
+    }
+    #c6 {
+      display: flex;
+      flex-direction: column;
+      background-color: #f1f1f1;
+    }
+    #c7 {
+      display: flex;
+      flex-direction: column;
+      background-color: #f1f1f1;
+    }
+
+    .content h3 {
+      padding-top: 19px;
+      font-size: 25px;
+      font-family: sans-serif;
+      padding-left: 10px;
+    }
+    .content h6 {
+      opacity: 0.4;
+      font-size: 16px;
+      padding-top: 19px;
+      font-family: sans-serif;
+      padding-left: 11px;
+    }
+    .content span {
+      padding-top: 19px;
+      padding-left: 10px;
+      line-height: 20px;
+      word-spacing: 1px;
+      text-align: justify;
+    }
+    .bigbox {
+            width: 98%;
+            height: 115vh;
+           padding-top:10px;
+           padding-left:30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           
+           
+        }
+        
+        .basic {
+            width: 47%;
+            height: 111vh;
+            padding-left: 10px;;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .pro {
+            width: 47%;
+            height: 110vh;
+           
+            margin: 10px;
+        }
+        
+        .basic ol li {
+           
+            list-style: none;
+            /* padding: 20px; */
+            background-color: #EfEfEf;
+            
+        }
+        
+        ol #basic {
+            /* border: 2px solid black; */
+            text-align: center;
+            /* margin: 10px; */
+            font-size: 25px;
+            padding: 32px 16px;
+            width: 100%;
+            background-color: #616161;
+            text-transform: capitalize;
+            font-family:  sans-serif;
+           
+            color: #ffffff;
+        }
+        
+        .basic ol {
+            width: 100%;
+           
+        }
+        .basic ol li{
+          border-bottom: 1px solid #ddd;
+         
+        }
+        
+        #bas {
+           
+            text-align: center;
+            /* margin: 10px; */
+            font-size: 16px;
+            padding: 25px;
+            width: 100%;
+           
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        ol li dt {
+            font-size: 16px;
+            padding: 16px;
+            color: #000000;
+            opacity: 0.4;
+        }
+        
+        #pr {
+          border-bottom: 1px solid #ddd;
+            text-align: center;
+            /* margin: 10px; */
+            font-size: 30px;
+            /* font-weight: bold; */
+            padding: 20px;
+            width: 100%;
+            /* background-color: #EfEfEf; */
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+        }
+        
+        .btn {
+            width: 100%;
+            text-align: center;
+           
+            /* margin-top: 30px; */
+            /* padding: 10px; */
+            background-color: #EfEfEf;
+            padding:25px;
+            
+        }
+        
+        button {
+            font-size: 17px;
+            padding: 12px 24px;
+            width: 32%;
+            background-color: #ffffff;
+            border:none;
+        }
+        .pro button{
+          background-color: #f44336;
+          color: white;
+          font-size: 17px;
+        }
+        .bigbox button:hover{
+          background-color: #000;
+          color:white
+        }
+        .pro ol li{
+          list-style: none;
+            /* padding: 20px; */
+            background-color: #EfEfEf;
+            border-bottom: 1px solid #ddd;
+        }
+
+        
+        #pre {
+            /* border: 2px solid black; */
+            text-align: center;
+            /* margin: 10px; */
+            font-size: 25px;
+            padding: 32px 16px;
+            width: 100%;
+            background-color: #f44336;
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+            color: #ffffff;
+        }
+        
+        #pro {
+           
+            text-align: center;
+            /* margin: 10px; */
+            font-size: 16px;
+            padding: 25px;
+            width: 100%;
+           
+            text-transform: capitalize;
+            font-family: 'poppins', sans-serif;
+        }
+        .contacts {
+      padding-left: 50px;
+      padding-top: 40px;
+      margin-top: 30px;
+    }
+    .contacts h2 {
+      color: #f44336;
+      font-size: 50px;
+      width: 80px;
+      padding-bottom: 30px;
+      padding-top: 20px;
+      
+    }
+    .form{
+      margin-top:18px;
+      margin-bottom: 16px;
+      padding-left: 5px;
+
+    }
+    .form label{
+      font-size:17px;
+    }
+    .form input{
+      border: 1px solid #ccc !important;
+      padding: 15px;
+      display: block;
+    width: 100%;
+    }
+    .bigbutton{
+      width:100%;
+      color: #fff ;
+    background-color: #f44336 ;
+    border: none;
+    padding: 15px;
+    margin-bottom:50px;
+    
+    }
+    .footer{
+      width:100%;
+      height:120px;
+     
+      margin-top:50px;
+      padding:50px;
+      color: #000 !important;
+    background-color: #f1f1f1 !important;
+    text-align: right;
+    vertical-align: middle;
+    }
+    .footer span a{
+       color: #000;
+      
+    }
+    button:hover{
+      background-color:#f1f1f1  ;
+      color: #000;
+    }
+  </style>
+  <body>
+    <div class="left-main">
+      <div class="left">
+        <h3>
+          <b>Company<br />Name</b>
+        </h3>
+        <div class="list">
+          <ul>
+            <li>
+              <b><a href="">Home</a></b>
+            </li>
+            <li><b></b><a href="">Showcase</a></li>
+
+            <li><b></b><a href="">Services</a></li>
+
+            <li><b></b><a href="">Designers</a></li>
+
+            <li><b></b><a href="">Packages</a></li>
+
+            <li><b></b><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="right-main">
+      <div class="header">
+        <br />
+        <h1><b>Interior Design</b></h1>
+
+        <h2><b> Showcase. </b></h2>
+        <div class="border"></div>
+      </div>
+      <div class="item-main">
+        <div class="item" id="i1"></div>
+        <div class="item" id="i2"></div>
+        <div class="item" id="i3"></div>
+        <div class="item" id="i4"></div>
+        <div class="item" id="i5"></div>
+        <div class="item" id="i6"></div>
+      </div>
+      <div class="services">
+        <h2><b>Services.</b></h2>
+        <div class="border"></div>
+        <p>
+          We are a interior design service that focus on what's best for your
+          home and what's best for you!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          corporis, neque ut in eum molestiae odio accusantium numquam enim a
+          perspiciatis animi optio quibusdam magni voluptas ducimus obcaecati
+          distinctio hic repellendus sunt facilis totam magnam saepe recusandae!
+          Repellat quidem officia laudantium reiciendis rerum sint cum nam modi.
+          Consectetur ipsa nisi porro, doloribus provident ex enim pariatur
+          natus ipsum, dolore iusto officia? Corporis quia cumque quam
+          perferendis necessitatibus, veritatis possimus laborum rerum aut
+          molestiae aperiam soluta eligendi. Voluptas animi ex ipsum!
+        </p>
+      </div>
+      <div class="designer">
+        <h2><b>Designers.</b></h2>
+        <div class="border"></div>
+        <p>The best team in the world.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          corporis, neque ut in eum molestiae odio accusantium numquam enim a
+          perspiciatis animi optio quibusdam magni voluptas ducimus obcaecati
+          distinctio hic repellendus sunt facilis totam magnam saepe recusandae!
+          Repellat quidem officia laudantium reiciendis rerum sint cum nam modi.
+          Consectetur ipsa nisi porro, doloribus provident ex enim pariatur
+          natus ipsum, dolore iusto officia? Corporis quia cumque quam
+          perferendis necessitatibus, veritatis possimus laborum rerum aut
+          molestiae aperiam soluta eligendi. Voluptas animi ex ipsum!
+        </p>
+        <p><b>Our designers are thoughtfully chosen:</b></p>
+        <div class="content">
+          <div class="c" id="c1"></div>
+          <div class="c" id="c2"></div>
+          <div class="c" id="c3"></div>
+
+          <div class="c" id="c5">
+            <h3>John Deo</h3>
+            <h6>CEO & Founder</h6>
+            <span
+              >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, perspiciatis?</span
+            >
+          </div>
+          <div class="c" id="c6">
+            <h3>Jane Doe</h3>
+            <h6>Designer</h6>
+            <span
+              >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, deleniti.</elementum
+            ></span>
+          </div>
+          <div class="c" id="c7">
+            <h3>Mike Ross</h3>
+            <h6>Architect</h6>
+            <span
+              >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat. </span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="package">
+        <h2><b>Packages.</b></h2>
+        <div class="border"></div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quod
+          exercitationem. Officia non dolor consequatur molestias illo
+          recusandae odio vero, ex porro dicta aut itaque quae mollitia
+          laudantium minus repellendus.
+        </p>
+      </div>
+      <div class="bigbox">
+        <div class="basic">
+            <ol>
+                <li id="basic">basic</li>
+                <li id="bas">floorplaning</li>
+                <li id="bas">10 hours support</li>
+                <li id="bas">photograhy</li>
+                <li id="bas">20%furniture discount</li>
+                <li id="bas">good deals</li>
+                <li id="pr">$199
+                    <dt>per room</dt>
+                </li>
+                <div class="btn">
+                    <button>Sign Up</button>
+                </div>
+            </ol>
+        </div>
+        <div class="pro">
+            <ol>
+                <li id="pre">pro</li>
+                <li id="pro">floorplaning</li>
+                <li id="pro">10 hours support</li>
+                <li id="pro">photograhy</li>
+                <li id="pro">20%furniture discount</li>
+                <li id="pro">good deals</li>
+                <li id="pr">$199
+                    <dt>per room</dt>
+                </li>
+                <div class="btn">
+                    <button>Sign Up</button>
+                </div>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="contacts">
+      <h2><b>Contact.</b></h2>
+      <div class="border"></div>
+      <p>
+        Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!
+      </p>
+      <form class="form">
+        <label for="">Name</label>
+        <br>
+        <input type="text"><br>
+        <label for="">Email</label>
+        <br>
+        <input type="email"><br>
+        <label for="">Message</label><br>
+        <input type="text"><br>
+        <button class="bigbutton">Send Message</button>
+      </form>
+    </div>
+    <div class="footer">
+    <span>Powered by <a href="#">w3.css</a></span></div>
+      
+    </div>
+  </body>
+</html>
